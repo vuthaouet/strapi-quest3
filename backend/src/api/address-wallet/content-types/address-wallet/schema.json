@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "address_wallets",
+  "info": {
+    "singularName": "address-wallet",
+    "pluralName": "address-wallets",
+    "displayName": "AddressWallet",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "discord_key": {
+      "type": "string"
+    },
+    "wallet_address": {
+      "type": "uid",
+      "targetField": "discord_key"
+    }
+  }
+}
