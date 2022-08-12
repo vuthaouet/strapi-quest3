@@ -54,6 +54,12 @@
     },
     "testthaovt_migrations": {
       "type": "integer"
+    },
+    "role": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.role",
+      "inversedBy": "users"
     }
   }
 }

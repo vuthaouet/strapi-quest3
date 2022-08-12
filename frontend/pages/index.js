@@ -5,13 +5,16 @@ import Seo from "../components/seo"
 import { fetchAPI } from "../lib/api"
 
 const Home = ({ articles, categories, homepage }) => {
+  console.log("thaovt0", articles)
   return (
     <Layout categories={categories}>
       <Seo seo={homepage.attributes.seo} />
       <div className="uk-section">
         <div className="uk-container uk-container-large">
           <h1>{homepage.attributes.hero.title}</h1>
-          <Articles articles={articles} />
+          {/*{!articles && <Articles articles={articles} />}*/}
+
+          {articles && <Articles articles={articles} />}
         </div>
       </div>
     </Layout>

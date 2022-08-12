@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wallet_address",
+  "info": {
+    "name": "wallet_address",
+    "description": "",
+    "singularName": "wallet_address",
+    "pluralName": "wallet_address",
+    "displayName": "Wallet Address"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true
+  },
+  "attributes": {
+    "role": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.role",
+      "inversedBy": "wallet_address",
+      "configurable": false
+    }
+  }
+}

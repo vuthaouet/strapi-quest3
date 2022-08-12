@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wallet_addresses",
+  "info": {
+    "singularName": "wallet-address",
+    "pluralName": "wallet-addresses",
+    "displayName": "Wallet Address"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Thaovt": {
+      "type": "string"
+    },
+    "role": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.role",
+      "inversedBy": "users",
+      "configurable": false
+    }
+  }
+}
